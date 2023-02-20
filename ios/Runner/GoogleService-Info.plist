@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>842512010768-jbq6tag17fekkdoprslaa0egro7nkk7a.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.842512010768-jbq6tag17fekkdoprslaa0egro7nkk7a</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA99w95nLnGQg_p5SjsiOqpPKch0qEiJI8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>842512010768</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.planok.guia-propietario</string>
+	<key>PROJECT_ID</key>
+	<string>guia-propietario</string>
+	<key>STORAGE_BUCKET</key>
+	<string>guia-propietario.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:842512010768:ios:af1028cbfdf29e4b0c4495</string>
+	<key>DATABASE_URL</key>
+	<string>https://guia-propietario.firebaseio.com</string>
+</dict>
+</plist>

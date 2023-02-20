@@ -1,0 +1,13 @@
+COUNTRY_CODE=PE
+
+AWS_USER_POOL_ID=us-east-2_Cpb4TCc8V
+AWS_CLIENT_ID=1v3lfktm4or2321nou547d0e76
+AWS_CLIENT_SECRET=1ahnlorjl8tcl68teevslscu0dr8f8h5k0f6ibcdbo60n44ctqli
+
+GCI_API=https://api-gci-rest-peru.integracionplanok.io/api/guia
+PLANOK_API=https://api-planok-peru.integracionplanok.io/api/guia
+PVI_API=https://www.pvi.pe/api/v3
+
+APP_CODE=REndyEUlLVap0fZQ
+SHARED_SECRET=BHxFRXc5vktRnApsPyRLV4ab8NYe94
+API_KEY=944041046483ec025241ea6cadf1a97c

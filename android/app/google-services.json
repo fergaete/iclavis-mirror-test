@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "842512010768",
+    "firebase_url": "https://guia-propietario.firebaseio.com",
+    "project_id": "guia-propietario",
+    "storage_bucket": "guia-propietario.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:842512010768:android:acb2a55da72dafa90c4495",
+        "android_client_info": {
+          "package_name": "com.planok.guia_propietario"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "842512010768-dh24ohj7c6kk9pm00elnmperot2di1vv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmULVSe-ew1IehUBkFUuVEb-fw6spo3OE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "842512010768-dh24ohj7c6kk9pm00elnmperot2di1vv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "842512010768-jbq6tag17fekkdoprslaa0egro7nkk7a.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.planok.guia-propietario"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

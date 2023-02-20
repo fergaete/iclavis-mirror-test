@@ -1,0 +1,13 @@
+COUNTRY_CODE=CL
+
+AWS_USER_POOL_ID=us-east-2_Bq2Kij3go
+AWS_CLIENT_ID=73gad410f72jvmbhr2edem8j16
+AWS_CLIENT_SECRET=1ahnlorjl8tcl68teevslscu0dr8f8h5k0f6ibcdbo60n44ctqli
+
+GCI_API=https://api-gci-rest.integracionplanok.io/api/guia
+PLANOK_API=https://api-planok.integracionplanok.io/api/guia
+PVI_API=https://www.pvi.cl/api/v3
+
+APP_CODE=7VyWU4JNuewga6h9
+SHARED_SECRET=BHxFRXc5vktRnApsPyRLV4ab8NYe94
+API_KEY=iclavisTest
