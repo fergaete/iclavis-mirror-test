@@ -23,7 +23,7 @@ jobs:
         run: flutter pub get
 
       - name: 🏭 Build Web Application
-        run: flutter build web --release --dart-define COUNTRY_CODE=${{ secrets.COUNTRY_CODE }} AWS_USER_POOL_ID=${{ secrets.AWS_USER_POOL_ID }} AWS_CLIENT_ID=${{ secrets.AWS_CLIENT_ID }} AWS_CLIENT_SECRET=${{ secrets.AWS_CLIENT_SECRET }} GCI_API=${{ secrets.GCI_API }} PLANOK_API=${{ secrets.PLANOK_API }} PVI_API=${{ secrets.PVI_API }} APP_CODE=${{ secrets.APP_CODE }} SHARED_SECRET=${{ secrets.SHARED_SECRET }} API_KEY=${{ secrets.API_KEY }}
+        run: flutter build web --release --dart-define COUNTRY_CODE=${{ secrets.COUNTRY_CODE }} --dart-define AWS_USER_POOL_ID=${{ secrets.AWS_USER_POOL_ID }} --dart-define AWS_CLIENT_ID=${{ secrets.AWS_CLIENT_ID }} --dart-define AWS_CLIENT_SECRET=${{ secrets.AWS_CLIENT_SECRET }} --dart-define GCI_API=${{ secrets.GCI_API }} --dart-define PLANOK_API=${{ secrets.PLANOK_API }} --dart-define PVI_API=${{ secrets.PVI_API }} --dart-define APP_CODE=${{ secrets.APP_CODE }} --dart-define SHARED_SECRET=${{ secrets.SHARED_SECRET }} --dart-define API_KEY=${{ secrets.API_KEY }}
 
       # (3)
       - name: Make copy of artifacts
