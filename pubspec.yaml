@@ -26,7 +26,6 @@ dependencies:
   firebase_crashlytics: ^3.0.2
   firebase_messaging: ^14.1.4
   flutter_bloc: ^8.1.1
-  flutter_dotenv: ^5.0.2
   flutter_form_builder: ^7.7.0
   form_builder_validators: ^8.3.0
   flutter_html: ^3.0.0-alpha.5
@@ -92,7 +91,6 @@ flutter:
         - asset: assets/icons/faqsIcon.ttf
 
   assets:
-    - env
     - assets/i18n/
     - assets/images/
     - assets/animations/

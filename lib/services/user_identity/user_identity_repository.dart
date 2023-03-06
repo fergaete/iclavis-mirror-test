@@ -3,7 +3,6 @@ import 'dart:async';
 import 'package:amazon_cognito_identity_dart_2/cognito.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
-import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:basic_utils/basic_utils.dart';
 
 import 'package:iclavis/models/user_model.dart';
@@ -13,12 +12,14 @@ import 'package:iclavis/services/user_storage/user_storage.dart';
 import 'package:iclavis/utils/http/exception_handler.dart';
 import 'package:iclavis/utils/http/result.dart';
 
+import '../../environment.dart';
 import 'cognito_service.dart';
 import 'user_identity_service.dart';
 
 final userPool = CognitoUserPool(
-  dotenv.env['AWS_USER_POOL_ID']!,
-  dotenv.env['AWS_CLIENT_ID']!,
+
+  Environment.AWS_USER_POOL_ID,
+  Environment.AWS_CLIENT_ID,
   //clientSecret: DotEnv()env['AWS_CLIENT_SECRET'],
 );
 
@@ -76,7 +77,7 @@ class UserIdentityRepository {
   Future<Result> signup({required String dni}) async {
     String formattedDni;
 
-    if (dotenv.env['COUNTRY_CODE'] == "PE") {
+    if (Environment.COUNTRY_CODE  == "PE") {
       formattedDni = dni;
     } else {
       formattedDni = dni.replaceAll(RegExp(r'[.||-]'), '');

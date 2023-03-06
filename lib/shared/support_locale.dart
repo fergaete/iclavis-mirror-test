@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_dotenv/flutter_dotenv.dart';
+
+import '../environment.dart';
 
 class CustomLocale {
   Iterable<Locale> defaultLocale() {
 
-    final countryCode = dotenv.env['COUNTRY_CODE'];
+    final countryCode = Environment.COUNTRY_CODE ;
     if (countryCode == "PE") {
       return [
         const Locale('en', 'US'),

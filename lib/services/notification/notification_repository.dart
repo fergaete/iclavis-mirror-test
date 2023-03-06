@@ -1,13 +1,13 @@
 import 'dart:convert';
 
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'package:iclavis/models/notification_model.dart';
 import 'package:iclavis/utils/http/exception_handler.dart';
 import 'package:iclavis/utils/http/result.dart';
 
+import '../../environment.dart';
 import 'notification_service.dart';
 
 class NotificationRepository {
@@ -30,7 +30,7 @@ class NotificationRepository {
         }
       }*/
 
-      final appCode = dotenv.env['APP_CODE'];
+      final appCode =  Environment.APP_CODE;
 
       final notificationHistory =
           await _notificationService.fetchNotficationHistory(

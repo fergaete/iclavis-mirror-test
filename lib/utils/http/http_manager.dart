@@ -1,11 +1,12 @@
 import 'package:dio/dio.dart';
-import 'package:flutter_dotenv/flutter_dotenv.dart';
+import 'package:iclavis/environment.dart';
+
 
 import 'interceptors.dart';
 
-final baseUrl = dotenv.env['GCI_API']??'';
-final baseUrlPlanok = dotenv.env['PLANOK_API']??'';
-final baseUrlPvi = dotenv.env['PVI_API']??'';
+final baseUrl = Environment.GCI_API;
+final baseUrlPlanok = Environment.PLANOK_API;
+final baseUrlPvi = Environment.PVI_API;
 
 class HttpManager {
 

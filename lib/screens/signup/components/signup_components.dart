@@ -2,13 +2,13 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:flutter_i18n/flutter_i18n.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 
 import 'package:iclavis/blocs/signup/signup_bloc.dart';
+import 'package:iclavis/environment.dart';
 import 'package:iclavis/personalizacion.dart';
 import 'package:iclavis/routes/routes.dart';
 import 'package:iclavis/widgets/widgets.dart';
@@ -45,7 +45,7 @@ class _SignUpComponentsState extends State<SignUpComponents> {
   @override
   void initState() {
     _signUpFormBuilderKey = GlobalKey<FormBuilderState>();
-    countryCode = dotenv.env['COUNTRY_CODE']??'';
+    countryCode =  Environment.COUNTRY_CODE;
     WidgetsBinding.instance.addPostFrameCallback((_) => _userIdController.clear());
     if(countryCode=='CL') {
     _userIdController.addListener(() {
@@ -130,7 +130,7 @@ class _SignUpComponentsState extends State<SignUpComponents> {
             key: const Key("userId"),
             attribute: "userId",
             controller: _userIdController,
-            maxLength: dotenv.env['COUNTRY_CODE'] == "PE" ? 8 : 12,
+            maxLength:  Environment.COUNTRY_CODE == "PE" ? 8 : 12,
             keyboardType: TextInputType.visiblePassword,
             title: i18n("signup.user_id"),
             titleStyle: _styles.mediumText(14.sp, Customization.variable_7),

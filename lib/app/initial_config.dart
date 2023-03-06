@@ -3,7 +3,7 @@ import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_dotenv/flutter_dotenv.dart';
+
 import 'package:iclavis/services/notification/notification_manager.dart';
 
 import '../blocs/simple_bloc_observer.dart';
@@ -19,7 +19,7 @@ class InitialConfig {
     SystemChrome.setSystemUIOverlayStyle(
         const SystemUiOverlayStyle(statusBarColor: Colors.transparent));
 
-    await dotenv.load(fileName: 'env');
+    //await dotenv.load(fileName: 'variables-test');
     FlutterError.onError = FirebaseCrashlytics.instance.recordFlutterError;
 
     FirebaseMessaging.onBackgroundMessage(

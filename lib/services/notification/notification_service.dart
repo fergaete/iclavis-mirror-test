@@ -1,4 +1,4 @@
-import 'package:flutter_dotenv/flutter_dotenv.dart';
+import 'package:iclavis/environment.dart';
 import 'package:iclavis/models/notification_model.dart';
 import 'package:iclavis/utils/http/http_manager.dart';
 
@@ -22,7 +22,7 @@ class NotificationService {
 
   Future<void> postReadNotfication(
       String dni, int notificationId) async {
-    final appCode = dotenv.env['APP_CODE'];
+    final appCode =  Environment.APP_CODE;
     final httpClient = HttpManager.instance.withToken;
 
     final response = await httpClient.post(
